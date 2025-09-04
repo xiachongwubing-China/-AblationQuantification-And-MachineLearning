@@ -23,7 +23,6 @@ import matplotlib.pyplot as plt
 import warnings
 warnings.filterwarnings("ignore")
 
-# ================= 配置 =================
 img_dir = r"D:\AIEnv\TotalSegmentator\resample2"
 mask_dir = r"D:\AIEnv\TotalSegmentator\label2"
 excel_file = r"zzbanv4.xlsx"
@@ -466,4 +465,5 @@ def save_risk_scores(df, dataset_name, output_dir):
 save_risk_scores(cox_train, "Train", output_dir)
 save_risk_scores(cox_valid, "Valid", output_dir)
 save_risk_scores(cox_test,  "Test",  output_dir)
+
 print("[DONE] All plots and metrics saved under:", output_dir)
